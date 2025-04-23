@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import UserPage from '../features/users/UserPage';
 import AuthPage from '../features/auth/signin/AuthPage'; // Assurez-vous d'importer la page d'authentification
 import RegisterPage from '../features/auth/signup/RegisterPage'; // Assurez-vous d'importer la page d'authentification
-import Navbar from '../components/Navbar'; // Assurez-vous d'importer la barre de navigation
+//import Navbar from '../components/Navbar'; // Assurez-vous d'importer la barre de navigation
 import ProductPage from '../features/products/ProductPage'; // Assurez-vous d'importer la page produit
 import Sidebar from '../components/Sidebar';
 

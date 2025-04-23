@@ -45,7 +45,8 @@ function Navbar({ isSidebarCollapsed }) {
         position="fixed"
         sx={{
           backgroundColor: 'rgba(0, 123, 255, 0.9)',
-          marginLeft: isSidebarCollapsed ? '0' : '264px', // Adjust based on sidebar state
+          marginLeft: isSidebarCollapsed ? '80px' : '250px', // Ajustement dynamique
+          width: isSidebarCollapsed ? 'calc(100% - 80px)' : 'calc(100% - 250px)', // Ajustement de la largeur
           transition: 'all 0.3s ease-in-out',
         }}
       >
