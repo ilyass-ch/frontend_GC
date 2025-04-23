@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Base Reset */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+
+/* Main container split in two sides */
+.login-main {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+/* Left side with image */
+.login-left {
+  flex: 1;
+  background-color: #E9E9E9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-left img {
+  width: 640px;
+  height: 100%;
+  max-width: 100%;
+}
+
+/* Right side with form */
+.login-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Container inside right */
+.login-right-container {
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-logo {
+  align-self: center;
+  padding-bottom: 20px;
+}
+
+.login-logo img {
+  width: 30px;
+}
+
+.login-center {
+  text-align: center;
+}
+
+.login-center h2 {
+  font-size: 3.5rem;
+}
+
+.login-center p {
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input[type='username'],
+form input[type='password'],
+form input[type='text'] {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 16px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  font-size: 1.5rem;
+}
+
+.pass-input-div {
+  position: relative;
+}
+
+.pass-input-div svg {
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  bottom: 35px;
+  cursor: pointer;
+}
+
+.login-center-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.remember-div {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.forgot-pass-link {
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.forgot-pass-link:hover {
+  text-decoration: underline;
+}
+
+.login-center-buttons {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.login-center-buttons button {
+  width: 100%;
+  padding: 16px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+}
+
+.login-center-buttons button:nth-child(1) {
+  background-color: black;
+  color: white;
+  border: 3px solid black;
+}
+
+.login-center-buttons button:nth-child(1):hover {
+  background-color: white;
+  color: black;
+}
+
+.login-center-buttons button:nth-child(2) {
+  background-color: #F0F0F0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.login-center-buttons button:nth-child(2):hover {
+  background-color: #c4c4c457;
+}
+
+.login-center-buttons img {
+  width: 30px;
+}
+
+.login-bottom-p {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 30px;
+}
+
+.login-bottom-p a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-bottom-p a:hover {
+  text-decoration: underline;
+}
+
+/* ============================= */
+/*        Responsive Styles      */
+/* ============================= */
+
+/* Adapt layout for tablets and small screens */
+@media (max-width: 768px) {
+  .login-main {
+    flex-direction: column;
+  }
+
+  .login-left {
+    display: none; /* Hide image on small devices */
+  }
+
+  .login-right {
+    flex: none;
+    width: 100%;
+    height: auto;
+    padding: 4rem 2rem;
+  }
+
+  .login-right-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .login-center h2 {
+    font-size: 2.8rem;
+  }
+
+  .login-center p {
+    font-size: 1.6rem;
+  }
+
+  .login-center-buttons button {
+    font-size: 1.4rem;
+  }
+
+  .login-bottom-p {
+    font-size: 1.3rem;
+  }
+}
+
+/* Reduce padding and font size further for very small screens */
+@media (max-width: 480px) {
+  .login-center h2 {
+    font-size: 2.4rem;
+  }
+
+  .login-center p,
+  .remember-div label,
+  .forgot-pass-link {
+    font-size: 1.2rem;
+  }
+
+  form input {
+    font-size: 1.4rem;
+  }
+
+  .login-center-buttons button {
+    font-size: 1.3rem;
+    padding: 12px;
+  }
+
+  .pass-input-div svg {
+    bottom: 32px;
+    font-size: 18px;
+  }
+
+  .login-bottom-p {
+    font-size: 1.2rem;
+  }
+}

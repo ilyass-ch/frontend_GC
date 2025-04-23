@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+
+.register-main {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.register-left,
+.register-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-left {
+  background-color: #E9E9E9;
+}
+
+.register-left img {
+  width: 640px;
+  height: 591px;
+  object-fit: cover;
+}
+
+.register-right {
+  flex-direction: column;
+}
+
+.register-right-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.register-logo {
+  align-self: center;
+  padding-top: 5rem;
+}
+
+.register-logo img {
+  width: 3rem;
+}
+
+.register-center {
+  margin: auto 0;
+  text-align: center;
+}
+
+.register-center h2 {
+  font-size: 3.5rem;
+}
+
+.register-center p {
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input[type='text'],
+form input[type='password'],
+form input[type='email'],
+form input[type='tel'] {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1.6rem;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  font-size: 1.5rem;
+}
+
+.pass-input-div {
+  position: relative;
+}
+
+.pass-input-div svg {
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  bottom: 3.5rem;
+  cursor: pointer;
+}
+
+.register-center-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.register-center-buttons {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.register-center-buttons button {
+  width: 100%;
+  padding: 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+}
+
+.register-center-buttons button:nth-child(1) {
+  background-color: black;
+  color: white;
+  border: 3px solid black;
+}
+
+.register-center-buttons button:nth-child(1):hover {
+  background-color: white;
+  color: black;
+}
+
+.register-center-buttons button:nth-child(2) {
+  background-color: #F0F0F0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+}
+
+.register-center-buttons button:nth-child(2):hover {
+  background-color: #c4c4c457;
+}
+
+.register-center-buttons img {
+  width: 3rem;
+}
+
+.register-bottom-p {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-bottom: 4rem;
+}
+
+.register-bottom-p a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.register-bottom-p a:hover {
+  text-decoration: underline;
+}
+
+/* ===================== */
+/*     Responsive        */
+/* ===================== */
+
+@media (max-width: 1024px) {
+  .register-left img {
+    width: 500px;
+    height: auto;
+  }
+
+  .register-center h2 {
+    font-size: 3rem;
+  }
+
+  .register-center p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .register-main {
+    flex-direction: column;
+  }
+
+  .register-left {
+    display: none;
+  }
+
+  .register-right {
+    width: 100%;
+  }
+
+  .register-right-container {
+    width: 90%;
+    padding: 2rem 0;
+  }
+
+  .register-center h2 {
+    font-size: 2.5rem;
+  }
+
+  .register-center p {
+    font-size: 1.6rem;
+  }
+
+  form input {
+    font-size: 1.4rem;
+  }
+
+  .register-center-buttons button {
+    font-size: 1.4rem;
+    padding: 1.2rem;
+  }
+
+  .register-center-buttons img {
+    width: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-right-container {
+    width: 95%;
+  }
+
+  .register-center h2 {
+    font-size: 2rem;
+  }
+
+  .register-center p {
+    font-size: 1.4rem;
+  }
+
+  .register-center-buttons button {
+    font-size: 1.3rem;
+    padding: 1rem;
+  }
+}
